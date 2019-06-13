@@ -8,8 +8,28 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+class animal{
+public:
+    void set(int a);
+    int  get();
+private:
+    int age;
+};
+void animal::set(int a){
+    age=a;
+}
+int animal::get(){
+    return age;
+}
+int main()
+    {
+        int b;
+        cin>>b;
+    animal p;
+    p.set(b);
+    cout<<p.get()<<endl;
     return 0;
 }
+
+
